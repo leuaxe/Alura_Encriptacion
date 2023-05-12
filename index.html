@@ -16,18 +16,18 @@
     <main>
 
         <section>
-            <input class="text-encrip" type="text" placeholder="Ingrese el texto aqui">
+            <input class="text-encrip" id="texto" type="text" placeholder="Ingrese el texto aqui">
             <div class="informacion">
                 <h6>Solo letras minusculas y sin acento</h6>
             </div>
             <div class="botones">
-                <button class="btn-encriptar"><span>Encriptar</span></button>
+                <button class="btn-encriptar" onclick="encriptar()"><span>Encriptar</span></button>
                 <button class="btn-desencriptar"><span>Desencriptar</span></button>
             </div>
         </section>
 
         <section class="derecho">
-            <input class="text-desencrip" type="text">
+            <input class="text-desencrip" id="texto2" type="text">
             <div class="muneco">
                 <img src="imagenes/Muñeco.png" alt="Muñeco de alumno">
             </div>
@@ -40,5 +40,7 @@
             </div>
         </section>
     </main>
+
+    <script src="encriptador.js"></script>
 </body>
 </html>

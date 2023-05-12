@@ -191,7 +191,8 @@ h6{
 
 .copiar{
     box-sizing: border-box;
-    display: flex;
+    display: none;
+    /* display: flex; */
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -206,6 +207,7 @@ h6{
     border: 1px solid #0A3871;
     border-radius: 24px;
     cursor: pointer;
+
 }
 
 .copiar span{
