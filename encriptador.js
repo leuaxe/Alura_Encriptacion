@@ -43,7 +43,9 @@ for (let i = 0; i < frase.length; i++) {
     
 }
 
-document.getElementById("texto2").value = frase2
-document.getElementsByClassName("muneco")
+document.getElementById("texto2").value = frase2;
+document.getElementById("muneco").style.display = "none";
+document.getElementById("mensaje").style.display = "none";
+document.getElementById("copiar").style.display = "flex";
 }
 
