@@ -49,3 +49,35 @@ document.getElementById("mensaje").style.display = "none";
 document.getElementById("copiar").style.display = "flex";
 }
 
+function desencriptar() {
+    let frase = document.getElementById("texto").value;
+
+    for (let i = 0; i < frase.length; i++) {
+        let letra = frase.charAt(i);
+
+        switch (letra) {
+            case 'a':
+                frase = frase.replace("ai", "a");
+                break;
+            case 'e':
+                frase = frase.replace("enter", "e");
+                break;
+            case 'i':
+                frase = frase.replace("imes", "i");
+                break;
+            case 'o':
+                frase = frase.replace("ober", "o");
+                break;
+            case 'u':
+                frase = frase.replace("ufat", "u");
+                break;
+        }
+    }
+
+    document.getElementById("texto2").value = frase;
+}
+
+function copiar() {
+    let frase = document.getElementById("texto2").value;
+    document.getElementById("texto").value = frase;
+}
