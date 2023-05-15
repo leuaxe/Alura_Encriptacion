@@ -16,7 +16,8 @@
     <main>
 
         <section>
-            <input class="text-encrip" id="texto" type="text" placeholder="Ingrese el texto aqui">
+            <input class="text-encrip" id="texto" type="text" placeholder="Ingrese el texto aqui"
+                   onkeypress="return event.charCode == 32 || (event.charCode >= 97 && event.charCode <= 122)">
             <div class="informacion">
                 <h6>Solo letras minusculas y sin acento</h6>
             </div>
